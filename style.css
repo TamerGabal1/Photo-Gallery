@@ -1,16 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400&display=swap');
+
 nav{
     display: flex;
     align-items: center;
+    /* justify-content: space-evenly; */
     justify-content: space-evenly;
-    background-color: bisque;
-    color: black;
-    font-size: 40px;
-    text-decoration: underline;
-    /* i be breaking hearts out here */
-    /* mainly yours */
+    background-color: black;
+    font-size: 20px;
+    padding: 20px;
+    margin: -5px;
 }
 
 nav > a{
-    text-decoration: none;
     color: inherit;
+    text-decoration: none;
+    font-family: "Nunito Sans", sans-serif;
+    color: #ebe6da;
+    
 }
+nav > a:hover{
+    color: #F70A88;
+}
+body{
+    background-color: black;
+}
+.gallery{
+    margin-left: 30px;
+    margin-top: 50px;
+    display: grid;
+    gap: 30px;
+    grid-template-columns: 280px 280px 280px 280px;
+    grid-template-rows: repeat(5, 400px);
+
+}
+.image1:hover{
+    opacity: 0.8;
+}
+.image2:hover{
+    opacity: 0.8;
+}
+.image3:hover{
+    opacity: 0.8;
+}
+.image4:hover{
+    opacity: 0.8;
+}
+.image5{
+    grid-column-start: 1;
+    grid-column-end: 2;
+}
+.image6{
+    grid-column-start: 3;
+    grid-column-end: 4;
+}
+.image7{
+    grid-column-start: 1;
+    grid-column-end: 2;
+}
+.image8{
+    grid-column-start: 2;
+    grid-column-end: 3;
+}
+.container{
+    background: linear-gradient(rgba(0, 0, 0, 0.15), rgb(0,0,0,0.3)), url(/images/Grasslands.jpg) center/cover no-repeat fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 90vh;
+    /* margin-top: 30px; */
+    margin-top: 5px;
+    text-align: center;
+    padding-top: 100px;
+    opacity: 100%;
+}
+.container > h1{
+    font-size: 50px;
+    font-family:"Nunito Sans", sans-serif;
+    color: #D5202C;
+    text-shadow: -1px 1px 2px #000,
+				  1px 1px 2px #000,
+				  1px -1px 0 #000,
+				  -1px -1px 0 #000;
+}
+.container > p{
+    font-size: 20px;
+    font-family:"Nunito Sans", sans-serif;
+    color: #D5202C;
+    text-shadow: -1px 1px 2px #000,
+				  1px 1px 2px #000,
+				  1px -1px 0 #000,
+				  -1px -1px 0 #000;
+}
+
