@@ -6,24 +6,68 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
+    <script src="slideshow.js"></script>
 </head>
-<body>
+<body id="body">
     <nav>
             <a href="index.html">Home</a>
             <a href="about.html">About</a>
             <a href="philip.html">Philip</a>
             <a href="tamer.html">Tamer</a>
     </nav>
+    <div id="LandscapeDesc">
+        <hr>
+        <h1>Landscape Album</h1>
+        <p>The Landscape Album specifically portrays the scenery of Indonesia while also 
+            capturing the history and lifestyle of different Indonesian regions. 
+            More often than not we lack to consider the beauty of the places that aren't
+            particularly known. Being born in Indonesia, these monuments are what I have seen throughout my 
+            childhood and I hope you can see the beauty in my home, through my lens. 
+            
+        </p>
+        <hr>
+    </div>
     <div class="gallery">
-        <div class="image1"><img src="/images/BatakPic.jpg" alt="" width="280px" height="400px"></div>
-        <div class="image2"><img src="/images/EiffelTower.jpg" alt="" width="280px" height="400px"></div>
-        <div class="image3"><img src="/images/Mist.jpg" alt="" width="280px" height="400px"></div>
-        <div class="image4"><img src="/images/HarborPic.jpg" alt="" width="280px" height="400px"></div>
-        <div class="image5"><img src="/images/Grasslands.jpg" alt="" width="590px" height="400px"></div>
-        <div class="image6"><img src="/images/VacationPic.JPEG" alt="" width="590px" height="400px"></div>
-        <div class="image7"><img src="/images/LonelyIsland.jpg" alt="" width="280px" height="400px"></div>
-        <div class="image8"><img src="/images/CoralDestruction.JPG" alt="" width="590px" height="400px"></div>
-
+        <div class="image1"><img src="/images/BatakPic.jpg"  width="280px" height="400px" onclick="openFullImg(this.src)" ></div>
+        <div class="image2"><img src="/images/EiffelTower.jpg"  width="280px" height="400px" onclick="openFullImg(this.src)"></div>
+        <div class="image3"><img src="/images/Mist.jpg"  width="280px" height="400px" onclick="openFullImg(this.src)"></div>
+        <div class="image4"><img src="/images/Cliff.JPG"  width="280px" height="400px" onclick="openFullImg(this.src)"></div>
+        <div class="image5"><img src="/images/Grasslands.jpg"  width="590px" height="400px" onclick="openFullImg1(this.src)"></div>
+        <div class="image6"><img src="/images/VacationPic.JPEG"  width="590px" height="400px" onclick="openFullImg1(this.src)"></div>
+        <div class="image7"><img src="/images/LonelyIsland.jpg"  width="280px" height="400px" onclick="openFullImg(this.src)"></div>
+        <div class="image8"><img src="/images/CoralDestruction.JPG"  width="590px" height="400px" onclick="openFullImg1(this.src)"></div>
     </div>    
+    <div class="full-img" id="fullImgBox" >
+        <img src="/images/BatakPic.jpg" id="fullImg"  width="380px" height="500px">
+        <p onclick="closeFullImg()">X</p>
+        
+    </div>  
+    <div  class="full-img1" id="fullImgBox1">
+        <img src="/images/Grasslands.jpg" id="fullImg1"  width="690px" height="500px">
+        <p onclick="closeFullImg1()">X</p>
+    </div>
+    <script>
+
+        function openFullImg(pic){
+            var fullImgBox =  document.getElementById("fullImgBox");
+            fullImgBox.style.display = "flex";
+            var fullImg = document.getElementById("fullImg");
+            fullImg.src = pic;
+        }
+        function closeFullImg(){
+            var fullImgBox =  document.getElementById("fullImgBox");
+            fullImgBox.style.display = "none";
+        }
+        function openFullImg1(pic){
+            var fullImgBox1 =  document.getElementById("fullImgBox1");
+            fullImgBox1.style.display = "flex";
+            var fullImg1 = document.getElementById("fullImg1");
+            fullImg1.src = pic;
+        }
+        function closeFullImg1(){
+            var fullImgBox1 =  document.getElementById("fullImgBox1");
+            fullImgBox1.style.display = "none";
+        }
+    </script>
 </body>
 </html>
