@@ -10,13 +10,11 @@ nav{
     padding: 20px;
     margin: -5px;
 }
-
 nav > a{
     color: inherit;
     text-decoration: none;
     font-family: "Nunito Sans", sans-serif;
     color: whitesmoke;
-    
 }
 nav > a:hover{
     color: #D5202C;
@@ -24,7 +22,7 @@ nav > a:hover{
 }
 body{
     background-color: black;
-}
+}  
 .gallery{
     margin-left: 30px;
     margin-top: 50px;
@@ -37,30 +35,39 @@ body{
 }
 .gallery > .image1:hover{
     opacity: 0.8;
+    cursor: pointer;
 }
 .gallery >.image2:hover{
     opacity: 0.8;
+    cursor: pointer;
 }
 .gallery > .image3:hover{
     opacity: 0.8;
+    cursor: pointer;
 }
 .gallery > .image4:hover{
     opacity: 0.8;
+    cursor: pointer;
 }
 .gallery > .image5:hover{
     opacity: 0.8;
+    cursor: pointer;
 }
 .gallery > .image6:hover{
     opacity: 0.8;
+    cursor: pointer;
 }
 .gallery > .image7:hover{
     opacity: 0.8;
+    cursor: pointer;
 }
 .gallery > .image8:hover{
     opacity: 0.8;
+    cursor: pointer;
 }
 .gallery > .image9:hover{
-    opacity: 0.8;;
+    opacity: 0.8;
+    cursor: pointer;
 }
 .gallery > .image5{
     grid-column-start: 1;
@@ -78,22 +85,22 @@ body{
     grid-column-start: 2;
     grid-column-end: 3;
 }
-
-.container{
+#container{
     background: linear-gradient(rgba(0, 0, 0, 0.10), rgb(0,0,0,0.3)), url(/images/Grasslands.jpg) center/cover no-repeat fixed;
     background-size: cover;
     background-repeat: no-repeat;
-    height: 90vh;
+    height: 100vh;
     width: 101.42%;
     margin-left: -10px;
-    margin-bottom: -10px;
+    margin-bottom: -50px;
     /* margin-top: 30px; */
     margin-top: 5px;
     text-align: center;
     padding-top: 100px;
     opacity: 100%;
+    visibility: visible;
 }
-.container > h1{
+#header{
     font-size: 50px;
     font-family:"Nunito Sans", sans-serif;
     color: #D5202C;
@@ -102,7 +109,7 @@ body{
 				  1px -1px 0 #000,
 				  -1px -1px 0 #000;
 }
-.container > p{
+#subheader{
     font-size: 20px;
     font-family:"Nunito Sans", sans-serif;
     color: #D5202C;
@@ -111,6 +118,7 @@ body{
 				  0.5px -0.5px 0 #000,
 				  -0.5px -0.5px 0 #000;
 }
+
 #LandscapeDesc{
     text-align: center;
 }
@@ -159,4 +167,67 @@ body{
     color: white;
     cursor: pointer;
 }
-
+/* How to freeze scrolling */
+/* #body{
+    margin: 0;
+    height: 80%;
+    overflow: hidden;
+} */
+#mission{
+    text-align: center;
+}
+#button{
+    font-size: 20px;
+    background-color: inherit;
+    border-color: white;
+    border-radius: 25px;
+    color: red;
+    font-family: "Nunito Sans", sans-serif;
+    position: absolute;
+    bottom: -20%;
+    left: 43%;
+    cursor: pointer;
+}
+#statement{
+    background: linear-gradient(rgba(0, 0, 0, 0.10), rgb(0,0,0,0.3)), url(/images/Grasslands.jpg) center/cover no-repeat fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 101.42%;
+    margin-left: -10px;
+    margin-bottom: -50px;
+    /* margin-top: 30px; */
+    margin-top: 5px;
+    text-align: center;
+    padding-top: 100px;
+    opacity: 100%;
+    visibility: visible;
+    color: aliceblue;
+    display: none;
+}
+#missionHeader,
+#missionDesc{
+    margin-left: 300px;
+    margin-right: 300px;
+    text-align: center;
+    font-family:"Nunito Sans", sans-serif;
+    color: whitesmoke;
+    text-shadow: -0.5px 0.5px 1px #000,
+				  1px 1px 1px #000,
+				  0.5px -0.5px 0 #000,
+				  -0.5px -0.5px 0 #000;
+    
+}
+#button1{
+    font-size: 20px;
+    background-color: inherit;
+    border-color: white;
+    border-radius: 25px;
+    color: red;
+    font-family: "Nunito Sans", sans-serif;
+    position: absolute;
+    bottom: -20%;
+    left: 47.5%;
+    display: none;
+    cursor: pointer;
+}

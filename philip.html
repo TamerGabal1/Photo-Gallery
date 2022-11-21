@@ -4,9 +4,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>CultureLens</title>
     <link rel="stylesheet" href="style.css">
     <script src="slideshow.js"></script>
+    
 </head>
 <body id="body">
     <nav>
@@ -28,7 +29,7 @@
         <hr>
     </div>
     <div class="gallery">
-        <div class="image1"><img src="/images/BatakPic.jpg"  width="280px" height="400px" onclick="openFullImg(this.src)" ></div>
+        <div class="image1"><img src="/images/BatakPic.jpg"  width="280px" height="400px" onclick="openFullImg(this.src)"></div>
         <div class="image2"><img src="/images/EiffelTower.jpg"  width="280px" height="400px" onclick="openFullImg(this.src)"></div>
         <div class="image3"><img src="/images/Mist.jpg"  width="280px" height="400px" onclick="openFullImg(this.src)"></div>
         <div class="image4"><img src="/images/Cliff.JPG"  width="280px" height="400px" onclick="openFullImg(this.src)"></div>
@@ -46,28 +47,5 @@
         <img src="/images/Grasslands.jpg" id="fullImg1"  width="690px" height="500px">
         <p onclick="closeFullImg1()">X</p>
     </div>
-    <script>
-
-        function openFullImg(pic){
-            var fullImgBox =  document.getElementById("fullImgBox");
-            fullImgBox.style.display = "flex";
-            var fullImg = document.getElementById("fullImg");
-            fullImg.src = pic;
-        }
-        function closeFullImg(){
-            var fullImgBox =  document.getElementById("fullImgBox");
-            fullImgBox.style.display = "none";
-        }
-        function openFullImg1(pic){
-            var fullImgBox1 =  document.getElementById("fullImgBox1");
-            fullImgBox1.style.display = "flex";
-            var fullImg1 = document.getElementById("fullImg1");
-            fullImg1.src = pic;
-        }
-        function closeFullImg1(){
-            var fullImgBox1 =  document.getElementById("fullImgBox1");
-            fullImgBox1.style.display = "none";
-        }
-    </script>
 </body>
 </html>

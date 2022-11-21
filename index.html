@@ -4,8 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>CultureLens</title>
     <link rel="stylesheet" href="style.css">
+    <script src="slideshow.js"></script>
 </head>
 <body id="body">
     <nav>
@@ -15,13 +16,24 @@
         <a href="tamer.html">Tamer</a>
     </nav>
     <div class="title">
-        <div class="container">
-            <h1>Cultural Experience</h1>
-            <p>by Philip Hadiwidjaja and Tamer Gabal</p>
+        <div id="container" >
+            <h1 id="header">Cultural Experience</h1>
+            <p id="subheader">by Philip Hadiwidjaja and Tamer Gabal</p>
         </div>
-    </div>
-    <div id="down">
-        <a onclick=""></a>
+        <div id="mission">
+            <button id="button" onclick="openMission()">Mission Statement</button>
+            <button id="button1" onclick="closeMission()">Back</button>
+        </div>
+            
+        <div id="statement">
+            <h1 id="missionHeader">Our Mission</h1>
+            <p id="missionDesc">The main purpose of creating this website is to spread culture through pictures. Through the different 
+                albums, we attempt to flesh out the complexities and differences of lifestyle, culture, and regions, that
+                we sometimes ignore. Living in New York City, we tend to forget the more unknown and unpopularized areas of 
+                different countries. Being Indonesian, I wanted to express the beauty that Indonesia has in its land, while also
+                addressing the issues that disrupt its beauty. 
+            </p>
+        </div>
     </div>
 </body>
 </html>
