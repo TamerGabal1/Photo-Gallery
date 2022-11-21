@@ -85,6 +85,11 @@ body{
     grid-column-start: 2;
     grid-column-end: 3;
 }
+.gallery > .image9{
+    grid-column-start: 1;
+    grid-column-end: 3;   
+}
+
 #container{
     background: linear-gradient(rgba(0, 0, 0, 0.10), rgb(0,0,0,0.3)), url(/images/Grasslands.jpg) center/cover no-repeat fixed;
     background-size: cover;
@@ -100,7 +105,23 @@ body{
     opacity: 100%;
     visibility: visible;
 }
-#header{
+#container2{
+    background: linear-gradient(rgba(0, 0, 0, 0.10), rgb(0,0,0,0.3)), url(/images/blue.jpeg) center/cover no-repeat fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 101.42%;
+    margin-left: -10px;
+    margin-bottom: -50px;
+    /* margin-top: 30px; */
+    margin-top: 5px;
+    text-align: center;
+    padding-top: 100px;
+    opacity: 100%;
+    visibility: visible;
+}
+
+.header{
     font-size: 50px;
     font-family:"Nunito Sans", sans-serif;
     color: #D5202C;
@@ -119,10 +140,10 @@ body{
 				  -0.5px -0.5px 0 #000;
 }
 
-#LandscapeDesc{
+#LandscapeDesc, #TravelerDesc{
     text-align: center;
 }
-#LandscapeDesc > p, #LandscapeDesc > h1{
+#LandscapeDesc > p, #LandscapeDesc > h1, #TravelerDesc > p, #TravelerDesc > h1{
     margin: 50px;
     color: aliceblue;
     font-family: "Nunito Sans", sans-serif;;
@@ -180,6 +201,7 @@ body{
     font-size: 20px;
     background-color: inherit;
     border-color: white;
+    background-color: rgb(255,255,255,0.6);
     border-radius: 25px;
     color: red;
     font-family: "Nunito Sans", sans-serif;
@@ -222,6 +244,7 @@ body{
     font-size: 20px;
     background-color: inherit;
     border-color: white;
+    background-color: rgb(255,255,255,0.6);
     border-radius: 25px;
     color: red;
     font-family: "Nunito Sans", sans-serif;
