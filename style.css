@@ -196,7 +196,11 @@ body{
 #mission{
     text-align: center;
 }
-#button{
+
+#about{
+    text-align: center;
+}
+.openButton{
     font-size: 20px;
     background-color: inherit;
     border-color: white;
@@ -209,8 +213,14 @@ body{
     left: 43%;
     cursor: pointer;
 }
+
+.about{
+    position: absolute;
+    bottom: -20%;
+    left: 46%;
+}
 #statement{
-    background: linear-gradient(rgba(0, 0, 0, 0.10), rgb(0,0,0,0.3)), url(/images/Grasslands.jpg) center/cover no-repeat fixed;
+    background: linear-gradient(rgba(0, 0, 0, 0.10), rgb(0,0,0,0.3)), url(images/Grasslands.jpg) center/cover no-repeat fixed;
     background-size: cover;
     background-repeat: no-repeat;
     height: 100vh;
@@ -226,6 +236,24 @@ body{
     color: aliceblue;
     display: none;
 }
+#us{
+    background: linear-gradient(rgba(0, 0, 0, 0.10), rgb(0,0,0,0.3)), url(images/blue.jpeg) center/cover no-repeat fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 101.42%;
+    margin-left: -10px;
+    margin-bottom: -50px;
+    /* margin-top: 30px; */
+    margin-top: 5px;
+    text-align: center;
+    padding-top: 100px;
+    opacity: 100%;
+    visibility: visible;
+    color: aliceblue;
+    display: none;
+    grid-template-columns: 1fr 1fr;
+}
 #missionHeader,
 #missionDesc{
     margin-left: 300px;
@@ -239,7 +267,7 @@ body{
 				  -0.5px -0.5px 0 #000;
     
 }
-#button1{
+.closeButton{
     font-size: 20px;
     background-color: inherit;
     border-color: white;
