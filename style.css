@@ -91,7 +91,7 @@ body{
 }
 
 #container{
-    background: linear-gradient(rgba(0, 0, 0, 0.10), rgb(0,0,0,0.3)), url(/images/Grasslands.jpg) center/cover no-repeat fixed;
+    background: linear-gradient(rgba(0, 0, 0, 0.10), rgb(0,0,0,0.3)), url(images/) center/cover no-repeat fixed;
     background-size: cover;
     background-repeat: no-repeat;
     height: 100vh;
@@ -106,7 +106,7 @@ body{
     visibility: visible;
 }
 #container2{
-    background: linear-gradient(rgba(0, 0, 0, 0.10), rgb(0,0,0,0.3)), url(/images/blue.jpeg) center/cover no-repeat fixed;
+    background: linear-gradient(rgba(0, 0, 0, 0.10), rgb(0,0,0,0.3)), url(images/blue.jpeg) center/cover no-repeat fixed;
     background-size: cover;
     background-repeat: no-repeat;
     height: 100vh;
