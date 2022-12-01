@@ -9,7 +9,7 @@
     <script src="slideshow.js" defer></script>
 </head>
 <body id="body">
-    <nav id="about">
+    <nav>
         <a href="index.html">Home</a>
         <a href="about.html">About</a>
         <a href="philip.html">Philip</a>
@@ -17,12 +17,12 @@
     </nav>
     <div class="title">
         <div id="container2">
-            <h1 class="header">About Us</h1>
+            <h1 class="header2">About Us</h1>
         </div>
-        <div id="about">
+        <!-- <div id="about">
             <button class="openButton about" onclick="openAbout()">About Us</button>
             <button class="closeButton about" onclick="closeAbout()">Back</button>
-        </div>
+        </div> -->
         <div id="us">
             <div id="philip">
                 <h1>Hi, I'm Philip</h1>
@@ -31,12 +31,26 @@
             </div>
             <div id="tamer">
                 <h1>Hi, I'm Tamer</h1>
-                <img src="PUT IMAGE HERE">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, modi? Voluptatibus pariatur excepturi hic ipsa corporis explicabo porro praesentium optio nostrum, minus ex tempore quia in? Quidem error quisquam voluptatem!</p>
+                <img src="images/tamer.jpg" width="200px">
+                <p>My name is Tamer and I worked on the Traveler Album and this page you're on right now! With my album, I focused on different places I've been to and what I've personally seen.</p>
             </div>
         </div>
+        <div id="contactUs">
+            <h2>Contact Us!</h2>
+            <form action="https://formspree.io/f/xjvzqgkz" method="post">
+                <label for="email">Your Email</label>
+                <input name="Email" id="email" type="email">
+                <label for="message">Message</label>
+                <input name="message" id="message" type="message">
+                <button type="submit">Submit</button>
+              </form>
+        </div>
+        <div class="mission">
+            <button class="openButton about" onclick="openAbout()">About Us</button>
+            <button class="closeButton about" onclick="closeAbout()">Back</button>
+        </div>
     </div>
-    
+    <footer>&copy; Philip Hadiwidjaja and Tamer Gabal 2022</footer>
     
     
 </body>

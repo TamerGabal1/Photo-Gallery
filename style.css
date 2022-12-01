@@ -18,6 +18,7 @@ nav > a{
 }
 nav > a:hover{
     color: #D5202C;
+    text-decoration: underline;
     transition-delay: 90ms;
 }
 body{
@@ -33,19 +34,35 @@ body{
     background-color: black;
 
 }
-.gallery > .image1:hover{
+
+#tamersGallery{
+    margin-left: 30px;
+    margin-top: 50px;
+    display: grid;
+    column-gap: 30px;
+    grid-template-columns: repeat(4, 280px);
+    /* grid-template-rows: repeat(3, 400px); */
+    background-color: black;
+    row-gap: 60px;
+}
+
+#tamersGallery img:hover{
     opacity: 0.8;
     cursor: pointer;
 }
-.gallery >.image2:hover{
+.image1:hover{
     opacity: 0.8;
     cursor: pointer;
 }
-.gallery > .image3:hover{
+.image2:hover{
     opacity: 0.8;
     cursor: pointer;
 }
-.gallery > .image4:hover{
+.image3:hover{
+    opacity: 0.8;
+    cursor: pointer;
+}
+.image4:hover{
     opacity: 0.8;
     cursor: pointer;
 }
@@ -69,26 +86,45 @@ body{
     opacity: 0.8;
     cursor: pointer;
 }
-.gallery > .image5{
+.image10:hover{
+    opacity: 0.8;
+    cursor: pointer;
+}
+.image11:hover{
+    opacity: 0.8;
+    cursor: pointer;
+}
+.image5{
     grid-column-start: 1;
     grid-column-end: 2;
 }
-.gallery > .image6{
+.image6{
     grid-column-start: 3;
     grid-column-end: 4;
 }
-.gallery > .image7{
+.image7{
     grid-column-start: 1;
     grid-column-end: 2;
 }
-.gallery > .image8{
+.image8{
     grid-column-start: 2;
     grid-column-end: 3;
 }
-.gallery > .image9{
+.image9{
     grid-column-start: 1;
     grid-column-end: 3;   
 }
+.image10{
+    grid-column-start: 3;
+    grid-column-end: 5;   
+}
+.image11{
+    grid-column-start: 2;
+    grid-column-end: 4;   
+}
+/* *{
+    border: 1px solid red;
+} */
 
 #container{
     background: linear-gradient(rgba(0, 0, 0, 0.10), rgb(0,0,0,0.3)), url(images/Grasslands.jpg) center/cover no-repeat fixed;
@@ -105,7 +141,7 @@ body{
     visibility: visible;
 }
 #container2{
-    background: linear-gradient(rgba(0, 0, 0, 0.10), rgb(0,0,0,0.3)), url(images/blue.jpeg) center/cover no-repeat fixed;
+    background: linear-gradient(rgba(0, 0, 0, 0.10), rgb(0,0,0,0.3)), url(images/lake.jpeg) center/cover no-repeat fixed;
     background-size: cover;
     background-repeat: no-repeat;
     height: 100vh;
@@ -124,6 +160,15 @@ body{
     font-size: 50px;
     font-family:"Nunito Sans", sans-serif;
     color: #D5202C;
+    text-shadow: -1px 1px 2px #000,
+				  1px 1px 2px #000,
+				  1px -1px 0 #000,
+				  -1px -1px 0 #000;
+}
+.header2{
+    font-size: 50px;
+    font-family:"Nunito Sans", sans-serif;
+    color: #86626E;
     text-shadow: -1px 1px 2px #000,
 				  1px 1px 2px #000,
 				  1px -1px 0 #000,
@@ -193,8 +238,11 @@ body{
     height: 80%;
     overflow: hidden;
 } */
-#mission{
+.mission{
     text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 #about{
@@ -206,19 +254,21 @@ body{
     border-color: white;
     background-color: rgb(255,255,255,0.6);
     border-radius: 25px;
+    padding: 10px;
     color: red;
     font-family: "Nunito Sans", sans-serif;
-    position: absolute;
-    bottom: -20%;
-    left: 43%;
+    /* position: absolute;
+    bottom: -18%;
+    left: 42%; */
+    /* text-align: center; */
     cursor: pointer;
 }
 
-.about{
+/* .about{
     position: absolute;
-    bottom: -20%;
+    bottom: -18%;
     left: 46%;
-}
+} */
 #statement{
     background: linear-gradient(rgba(0, 0, 0, 0.10), rgb(0,0,0,0.3)), url(images/Grasslands.jpg) center/cover no-repeat fixed;
     background-size: cover;
@@ -237,7 +287,7 @@ body{
     display: none;
 }
 #us{
-    background: linear-gradient(rgba(0, 0, 0, 0.10), rgb(0,0,0,0.3)), url(images/blue.jpeg) center/cover no-repeat fixed;
+    background: linear-gradient(rgba(0, 0, 0, 0.10), rgb(0,0,0,0.3)), url(images/lake.jpeg) center/cover no-repeat fixed;
     background-size: cover;
     background-repeat: no-repeat;
     height: 100vh;
@@ -253,6 +303,11 @@ body{
     color: aliceblue;
     display: none;
     grid-template-columns: 1fr 1fr;
+    column-gap: 20px;
+    color:#E0F2F9;
+}
+#us h1{
+    text-decoration: underline;
 }
 #missionHeader,
 #missionDesc{
@@ -275,9 +330,45 @@ body{
     border-radius: 25px;
     color: red;
     font-family: "Nunito Sans", sans-serif;
-    position: absolute;
-    bottom: -20%;
-    left: 47.5%;
+    /* position: absolute; */
+    padding: 10px;
+    /* bottom: -18%;
+    left: 47.5%; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
     display: none;
     cursor: pointer;
+}
+#contactUs{
+    color: white;
+    position: absolute;
+    bottom: -10%;
+    left: 30%;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 20px;
+    color: #E7C8DD;
+}
+footer{
+    color: white;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    margin: 0px;
+}
+@media screen and (max-width: 400px) {
+    #tamersGallery{
+        margin-left: 30px;
+        margin-top: 50px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        column-gap: 30px;
+        /* grid-template-rows: repeat(3, 400px); */
+        background-color: black;
+        row-gap: 60px;
+    }
 }
