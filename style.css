@@ -122,6 +122,42 @@ body{
     grid-column-start: 2;
     grid-column-end: 4;   
 }
+.gallery > .image5{
+    grid-column-start: 1;
+    grid-column-end: 2;
+}
+.gallery >.image6{
+    grid-column-start: 3;
+    grid-column-end: 4;
+}
+.gallery >.image7{
+    grid-column-start: 1;
+    grid-column-end: 2;
+}
+.gallery >.image8{
+    grid-column-start: 2;
+    grid-column-end: 3;
+}
+.gallery >.image9{
+    grid-column-start: 4;
+    grid-column-end: 5;   
+}
+.gallery >.image10{
+    grid-column-start: 1;
+    grid-column-end: 3;   
+}
+.gallery >.image11{
+    grid-column-start: 3;
+    grid-column-end: 5;   
+}
+.gallery >.image12{
+    grid-column-start: 1;
+    grid-column-end: 3;   
+}
+.gallery >.image13{
+    grid-column-start: 3;
+    grid-column-end: 5;   
+}
 /* *{
     border: 1px solid red;
 } */
@@ -148,7 +184,6 @@ body{
     width: 101.42%;
     margin-left: -10px;
     margin-bottom: -50px;
-    /* margin-top: 30px; */
     margin-top: 5px;
     text-align: center;
     padding-top: 100px;
@@ -290,7 +325,7 @@ body{
     background: linear-gradient(rgba(0, 0, 0, 0.10), rgb(0,0,0,0.3)), url(images/lake.jpeg) center/cover no-repeat fixed;
     background-size: cover;
     background-repeat: no-repeat;
-    height: 100vh;
+    height: 140vh;
     width: 101.42%;
     margin-left: -10px;
     margin-bottom: -50px;
@@ -342,12 +377,13 @@ body{
 }
 #contactUs{
     color: white;
-    position: absolute;
+    /* position: absolute;
     bottom: -10%;
-    left: 30%;
+    left: 30%; */
     display: none;
     flex-direction: column;
     align-items: center;
+    margin-bottom: 20px;
     padding-bottom: 20px;
     color: #E7C8DD;
 }
@@ -357,18 +393,67 @@ footer{
     justify-content: center;
     padding: 10px;
     margin: 0px;
+    background-color: black
+}
+#table{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    
 }
 @media screen and (max-width: 400px) {
     #tamersGallery{
-        margin-left: 30px;
+        margin-left: 0px;
         margin-top: 50px;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
         column-gap: 30px;
-        /* grid-template-rows: repeat(3, 400px); */
         background-color: black;
         row-gap: 60px;
     }
+    #tamersGallery img{
+        width: 320px;
+    }
+    .gallery{
+        margin-left: 0px;
+        margin-top: 50px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        column-gap: 30px;
+        background-color: black;
+        row-gap: 60px;
+    }
+    .gallery img{
+        width: 320px;
+    }
+    .title{
+        margin-right:-13px;
+    }
+}
+#philipPic{
+    border-radius: 30px;
+}
+#Batak{
+    margin-top: 100px;
+    display: block;
+    color: white;
+    text-align: center;
+}
+table, th, td{
+    color: black;
+    border: 2px solid;
+    border-color: black;
+    background-color: burlywood
+}
+td{
+    color: #000;
+}
+#locations{
+    text-align: center;
+    color: white;
 }
